@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Order Alerts",
+    "slug": "order-alert-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0f1a"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0f1a"
+      },
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "ios": {
+      "supportsTablet": false
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#1d4ed8",
+          "sounds": []
+        }
+      ],
+      "expo-asset"
+    ],
+    "extra": {
+      "apiBaseUrl": "http://YOUR_SERVER_IP:8000"
+    }
+  }
+}
